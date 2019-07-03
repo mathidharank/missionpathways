@@ -14,8 +14,8 @@ function wwwDotMiddleware() {
     const app = express();
     app.use('/', httpsRedirect());
     app.use('/', wwwDotMiddleware());
-    app.use(express.static(__dirname + '/dist/pathway'));
+    app.use(express.static(__dirname + '/dist/'));
     app.get("/*", (request, response) => {
-    response.sendFile(path.join(__dirname + '/dist/pathway/index.html'));
+    response.sendFile(path.join(__dirname + '/dist/index.html'));
     });
     app.listen(process.env.PORT || 8080);
