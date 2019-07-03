@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-light fixed-top">
+  <span class="navbar-brand mb-0 h1">
+    <img style="width: 64px; height: 64px; margin-right: 8px;" src="../../assets/img/mission-pathways-logo.png">
+  </span>
+  <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+    <span class="navbar-toggler-icon bg-primary"></span>
+  </button>
+  <div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse bg-light">
+<!--<a class="nav-item nav-link active text-white">
+      Usuario: My name
+    </a>-->
+  <button class="nav-item btn bg-primary ml-3 mr-3">Logout</button>
+  <button class="nav-item btn bg-primary ml-3 mr-3">Settings</button>
+
+
+  </div>
+</nav>
+
+
